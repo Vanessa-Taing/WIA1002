@@ -1,0 +1,23 @@
+Q3
+A raw type refers to using a generic class or interface without specifying the type parameter(s). Using raw types can be unsafe because it can lead to type errors and bugs at runtime. Java was initially designed without generics, and raw types were used before generics were introduced in Java 5. Since raw types were allowed in Java before the introduction of generics, Java allows them to be used for backward compatibility.
+
+Q4
+Erasure means the compiler uses the generic type information to compile the code, but erases it afterwards. This approach enables the generic code to be backward-compatible with the legacy code that uses raw types.
+
+Q7
+public static void allTransportation(ArrayList<?> i, ArrayList<?> j){
+
+}
+
+Q8
+public static void displayList(ArrayList<?> list) {
+    for (Object element : list) {
+        System.out.println(element);
+    }
+}
+
+Q9
+Object
+
+Q10
+The bound type and its lower subclasses types.
